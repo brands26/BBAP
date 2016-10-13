@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beliautopart.bengkel.activity.LayoutingActivity"
+    android:background="@drawable/app_background"
+    android:backgroundTintMode="screen">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout12"
+        android:layout_below="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgStep"
+            android:src="@drawable/stepbengkel1"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/relativeLayout12"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoading"
+        android:background="#FFFFFF"
+        android:layout_alignTop="@+id/relativeLayout12"
+        android:visibility="visible">
+        <include
+            layout="@layout/loading_bap_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"></include>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/linearLayout"
+        android:layout_margin="10dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView11"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true">
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_cart_list"
+            android:padding="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/txtJudul"
+                android:layout_toRightOf="@+id/imgIcon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/imgIcon"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/imgIcon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtIsi"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="65dp"
+                android:layout_alignRight="@+id/txtJudul"
+                android:layout_alignEnd="@+id/txtJudul"
+                android:layout_alignLeft="@+id/imgIcon"
+                android:layout_alignStart="@+id/imgIcon"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/linearLayout"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="left|bottom"
+        android:gravity="bottom|end"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="false">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbtnSimpan"
+            android:background="@drawable/bottom_button_one_selector">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnSimpan"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/checkmark48"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Mainkan Sekarang"
+                android:id="@+id/txtBatal"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnSimpan"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

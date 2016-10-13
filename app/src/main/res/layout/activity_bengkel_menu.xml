@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/confirm_order_mail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.beliautopart.bengkel.activity.HomeActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg3"
+            android:layout_marginTop="61dp"
+            android:layout_weight="0.63"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/bottomNavigation">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/button"
+                android:onClick="onRegisterClick"
+                android:layout_below="@+id/button2"
+                android:layout_alignRight="@+id/button2"
+                android:layout_alignEnd="@+id/button2"
+                android:layout_alignLeft="@+id/button2"
+                android:layout_alignStart="@+id/button2"
+                android:visibility="gone" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/button2"
+                android:onClick="onLoginClick"
+                android:layout_below="@+id/btnRegister"
+                android:layout_alignLeft="@+id/btnRegister"
+                android:layout_alignStart="@+id/btnRegister"
+                android:layout_alignRight="@+id/btnRegister"
+                android:layout_alignEnd="@+id/btnRegister"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_weight="1"
+                android:onClick="onAccountClick"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/relativeLayout6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageButton
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:text="Bengkel"
+                        android:id="@+id/btnMobil"
+                        android:background="@drawable/satellite"
+                        android:src="@drawable/mobil"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="center"
+                        android:onClick="onMobilOnClick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="MOBIL"
+                        android:id="@+id/textView23"
+                        android:layout_below="@+id/btnMobil"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:id="@+id/relativeLayout9"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true">
+
+                    <ImageButton
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"
+                        android:text="Bengkel"
+                        android:id="@+id/btnSimpan"
+                        android:background="@drawable/satellite"
+                        android:src="@drawable/motor"
+                        android:layout_centerHorizontal="true"
+                        android:scaleType="center"
+                        android:onClick="onMotorOnClick" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="MOTOR"
+                        android:id="@+id/textView25"
+                        android:layout_below="@+id/btnSimpan"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/_12sdp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/bottomNavigation"
+            layout="@layout/bottom_navigation"
+            android:layout_width="@dimen/_320sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

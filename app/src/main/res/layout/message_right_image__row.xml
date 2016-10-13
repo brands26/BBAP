@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/redchat"
+        android:id="@+id/relativeLayout25"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtPesan"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="false"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Small Text"
+            android:id="@+id/txtNama"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/image"
+            android:layout_alignStart="@+id/image"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Small Text"
+            android:id="@+id/txtWaktu"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtNama"
+            android:layout_toEndOf="@+id/txtNama"
+            android:layout_margin="5dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNama"
+            android:layout_alignRight="@+id/txtWaktu"
+            android:layout_alignEnd="@+id/txtWaktu"
+            android:layout_alignLeft="@+id/txtNama"
+            android:layout_alignStart="@+id/txtNama"
+            android:id="@+id/layoutImg">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/txtWaktu" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtRead"
+            android:layout_below="@+id/layoutImg"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

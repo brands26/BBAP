@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cart_list"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="NOMOR ORDERID"
+            android:id="@+id/txtNomor"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="STATUS ORDER"
+            android:id="@+id/txtPesan"
+            android:layout_toLeftOf="@+id/imageButton2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtTanggal" />
+
+        <ImageButton
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:id="@+id/imageButton2"
+            android:layout_alignTop="@+id/txtNomor"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/bg_button"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/delete48"
+            android:scaleType="fitEnd"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:id="@+id/btnDetail"
+            android:background="@drawable/bg_button"
+            android:layout_below="@+id/imageButton2"
+            android:layout_alignLeft="@+id/imageButton2"
+            android:layout_alignStart="@+id/imageButton2"
+            android:src="@drawable/search48"
+            android:scaleType="fitEnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="TANGGAL ORDER"
+            android:id="@+id/txtTanggal"
+            android:layout_below="@+id/txtNomor"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

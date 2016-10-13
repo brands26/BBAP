@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_above="@+id/linearLayout"></RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnSimpan"
+                android:layout_centerHorizontal="true"
+                android:onClick="onAccountClick"
+                android:src="@drawable/account"
+                android:background="#00FFFFFF"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Account"
+                android:id="@+id/textView34"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnSimpan"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00FFFFFF">
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnMobil"
+                android:layout_centerHorizontal="true"
+                android:onClick="onComplaintClick"
+                android:src="@drawable/complaint"
+                android:background="#00FFFFFF"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Complaint"
+                android:id="@+id/textView35"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnMobil"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnSimpan"
+                android:layout_centerHorizontal="true"
+                android:onClick="onMyOrderClick"
+                android:background="#00FFFFFF"
+                android:src="@drawable/myorder"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="My Order"
+                android:id="@+id/textView36"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnSimpan"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnChat"
+                android:layout_centerHorizontal="true"
+                android:onClick="onTandCClick"
+                android:background="#00FFFFFF"
+                android:src="@drawable/tc"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="T&amp;C"
+                android:id="@+id/textView37"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnChat"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnChat"
+                android:layout_centerHorizontal="true"
+                android:onClick="onPolicyClick"
+                android:background="#00FFFFFF"
+                android:src="@drawable/policy"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Policy"
+                android:id="@+id/textView38"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnChat"
+                android:layout_alignRight="@+id/btnChat"
+                android:layout_alignEnd="@+id/btnChat" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

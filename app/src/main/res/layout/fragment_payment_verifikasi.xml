@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView7">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_card_red" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:id="@+id/layoutStatus"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Status Saat ini :"
+                    android:id="@+id/textView50"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pembayaran sudah terverifikasi. Menunggu serah terima dengan kurir."
+                    android:id="@+id/txtStatus"
+                    android:layout_below="@+id/textView50"
+                    android:layout_alignLeft="@+id/textView50"
+                    android:layout_alignStart="@+id/textView50"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingExtra="3dp" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_status"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_card_red" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="false"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="informasi :"
+                    android:id="@+id/textView61"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="16dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Kurir sedang menuju warehouse untuk mengambil pesanan Anda.\nSetelah proses serah terima barang diwarehouse, kurir segera menuju lokasi Anda."
+                    android:id="@+id/txtNominal"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_below="@+id/textView61"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/relativeLayout10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order No."
+                    android:id="@+id/txtNomorOrder"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+            android:id="@+id/layoutWarehouse"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/card_view_detail"
+            android:orientation="vertical"></LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WaitResponlayout">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Biaya Panggil Telah Diterima"
+                    android:id="@+id/txtNoOrderVerifikasi"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_verifikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Job ID:"
+                            android:id="@+id/textView565"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="14641406433898830"
+                            android:id="@+id/txtJobID"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView565" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nama Bengkel:"
+                            android:id="@+id/txtinfoNama"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtJobID"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="14641406433898830"
+                            android:id="@+id/txtnamaBengkel"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txtinfoNama" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Jarak Dari Lokasi Anda:"
+                            android:id="@+id/txtinfoJarak"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtnamaBengkel"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="14641406433898830"
+                            android:id="@+id/txtjarakBengkel"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txtinfoJarak"
+                            android:layout_marginBottom="16dp" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_job_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/textView212"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Anda sudah meng-approve bengkel dan pembayaran Biaya Panggil Bengkel telah kami terima \nHarap tunggu sementara bengkel kami menuju lokasi Anda"
+                            android:id="@+id/txtNomorOrder"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView212"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_job_informasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Informasi"
+                            android:id="@+id/textView2122"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda ingin melakukan tanya jawab dengan bengkel yang merespon request Anda, klik tombol CHAT"
+                            android:id="@+id/textView1224"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView2122"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_peta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Lokasi Bengkel/Teknisi :"
+                            android:id="@+id/textView42s41"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+                        <fragment
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_below="@+id/textView42s41"
+                            android:layout_marginBottom="16dp"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

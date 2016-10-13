@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/lbtnBatal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button_left_selector">
+
+            <TextView
+                android:id="@+id/textView83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnBatal"
+                android:layout_centerHorizontal="true"
+                android:text="Batal"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btnBatal"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_below="@+id/relativeLayout61"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/delete48"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_6sdp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lbtnBayar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button_right_selector">
+
+            <ImageView
+                android:id="@+id/btnBayar"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitCenter"
+                android:src="@drawable/checkmark48" />
+
+            <TextView
+                android:id="@+id/textView86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnBayar"
+                android:text="Bayar"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_alignLeft="@+id/btnBayar"
+                android:layout_alignStart="@+id/btnBayar"
+                android:layout_alignRight="@+id/btnBayar"
+                android:layout_alignEnd="@+id/btnBayar"
+                android:textAlignment="center" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout10"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentStart="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_below="@+id/relativeLayout10"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView50"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status Saat Ini:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textView50"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignStart="@+id/textView50"
+                        android:layout_below="@+id/textView50"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="Order Anda telah kami siapkan, silakan Anda melakukan pembayaran terlebih dahulu.\nPengiriman akan kami lakukan setelah Anda melakukan pembayaran."
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        tools:text="Order Anda telah kami siapkan, silakan Anda melakukan pembayaran terlebih dahulu.\nPengiriman akan kami lakukan setelah Anda melakukan pembayaran." />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/txtNomorOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Order No."
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutWarehouse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/card_view_status"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/txtStatus"
+                    android:background="@drawable/left_card_red">
+
+                    <FrameLayout
+                        android:background="@drawable/left_card_red"
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Item yang Tersedia:"
+                            android:id="@+id/textView109"
+                            android:layout_marginBottom="5dp"
+                            android:textStyle="bold"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimary" />
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/linierOrder"
+                            android:layout_below="@+id/textView109"
+                            android:orientation="vertical"
+                            android:divider="@drawable/divider"
+                            android:dividerPadding="5dp"
+                            android:showDividers="middle|end">
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_below="@+id/txtNominalPembayaran"
+                    android:background="@drawable/left_card_red">
+
+                    <FrameLayout
+                        android:background="@drawable/left_card_red"
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Rincian Biaya:"
+                            android:id="@+id/textView109"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary" />
+                        <LinearLayout
+                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:id="@+id/linierBiaya"
+                            android:layout_below="@+id/textView109"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Total:"
+                            android:id="@+id/textView120"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_below="@+id/linierBiaya"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Medium Text"
+                            android:id="@+id/textView123"
+                            android:layout_alignTop="@+id/textView120"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignBottom="@+id/textView120" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_status_reject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout10"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/left_card_red"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <FrameLayout
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/left_card_red" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_below="@+id/layoutStatus"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:id="@+id/listItemIndenLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentBottom="false"
+                            android:layout_below="@+id/txt113"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"></LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txt113"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Item yang Inden:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout10"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/left_card_red"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true">
+
+                    <FrameLayout
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/left_card_red" />
+
+                    <RelativeLayout
+                        android:id="@+id/layoutMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_below="@+id/layoutStatus"
+                        android:layout_centerHorizontal="true"
+                        android:padding="10dp"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/txt113"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Item yang Tersedia:"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+                        <LinearLayout
+                            android:id="@+id/listItemDiterimaLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_alignParentBottom="false"
+                            android:layout_below="@+id/txt113"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"></LinearLayout>
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout10"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/left_card_red"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true">
+
+    <FrameLayout
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/left_card_red" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false"
+        android:id="@+id/layoutMain"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nama Kurir:"
+            android:id="@+id/txt113"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nama Kurir"
+            android:id="@+id/txtNamaKurir"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/txt113"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No. HP Kurir:"
+            android:id="@+id/txt115"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/txtNamaKurir"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hp"
+            android:id="@+id/txtHpKurir"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/txt115"
+            android:layout_marginBottom="16dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Foto Kurir:"
+            android:id="@+id/txt117"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/txtHpKurir"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt117"
+            android:layout_alignLeft="@+id/txt117"
+            android:layout_alignStart="@+id/txt117"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_cart_list"
+            android:id="@+id/layout_foto">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/imgKurir"
+                android:layout_margin="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Klik item yang Anda reject sebagai konfirmasi :"
+            android:id="@+id/textView136"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/layout_foto" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView136"
+            android:id="@+id/listItemLayout"
+            android:layout_marginBottom="10dp"></LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Hp"
+            android:id="@+id/textView137"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/textView136"
+            android:layout_marginBottom="16dp"
+            android:textAllCaps="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/listItemLayout"
+            android:id="@+id/linearLayout11">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking"
+                android:id="@+id/button3"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_button"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi"
+                android:id="@+id/button4"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_button"
+                android:padding="10dp"
+                android:textColor="#FFFFFF"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

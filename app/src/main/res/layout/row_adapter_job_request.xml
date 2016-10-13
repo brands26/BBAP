@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout10"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/left_card_red"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardUseCompatPadding="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <FrameLayout
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/left_card_red" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Job Id"
+                android:id="@+id/txtJobId"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/txtWaktu"
+                android:layout_alignEnd="@+id/txtWaktu"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Jenis Job"
+                android:id="@+id/textView98"
+                android:layout_below="@+id/txtJobId"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/txtWaktu"
+                android:layout_alignEnd="@+id/txtWaktu"
+                android:visibility="gone" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Jenis Job"
+                android:id="@+id/txtJenisJob"
+                android:layout_below="@+id/textView98"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/txtWaktu"
+                android:layout_alignEnd="@+id/txtWaktu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nama"
+                android:id="@+id/txtNamaCustomer"
+                android:layout_below="@+id/textView98"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/txtWaktu"
+                android:layout_alignEnd="@+id/txtWaktu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="jarak"
+                android:id="@+id/txtJarak"
+                android:layout_below="@+id/txtNamaCustomer"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignRight="@+id/txtWaktu"
+                android:layout_alignEnd="@+id/txtWaktu" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Waktu Request"
+                android:id="@+id/txtWaktu"
+                android:layout_below="@+id/txtJarak"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="kendaraan"
+                android:id="@+id/txtKendaraan"
+                android:layout_below="@+id/txtWaktu"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tipe"
+                android:id="@+id/txtTipe"
+                android:layout_below="@+id/txtKendaraan"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Nopol"
+                android:id="@+id/txtNopol"
+                android:layout_below="@+id/txtTipe"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Kerusakan"
+                android:id="@+id/txtKerusakan"
+                android:layout_below="@+id/txtNopol"
+                android:layout_alignLeft="@+id/txtNopol"
+                android:layout_alignStart="@+id/txtNopol"
+                android:layout_marginBottom="10dp"
+                android:layout_alignRight="@+id/txtNopol"
+                android:layout_alignEnd="@+id/txtNopol" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtKerusakan">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail job"
+                    android:id="@+id/btnDetail"
+                    android:layout_alignBottom="@+id/btnAmbil"
+                    android:layout_alignRight="@+id/txtKerusakan"
+                    android:layout_alignEnd="@+id/txtKerusakan"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ambil Job"
+                    android:id="@+id/btnAmbil"
+                    android:layout_below="@+id/txtKerusakan"
+                    android:layout_alignLeft="@+id/txtKerusakan"
+                    android:layout_alignStart="@+id/txtKerusakan"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

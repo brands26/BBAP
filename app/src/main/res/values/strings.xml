@@ -1,0 +1,223 @@
+<resources>
+    <string name="app_name">Bengkel - Beliautopart</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="repassword">Masukkan Password Ulang</string>
+    <string name="namadepan">Nama Depan</string>
+    <string name="namabelakang">Nama Belakang</string>
+    <string name="hp">No HP</string>
+    <string-array name="alasanReject">
+        <item>Barang tidak sesuai/berbeda</item>
+        <item>Customer salah pesan barang</item>
+        <item>Barang Cacat/Rusak</item>
+    </string-array>
+
+    <string-array name="jenis_item">
+        <item>Semua Jenis</item>
+        <item>Spare Parts</item>
+        <item>Aksesoris</item>
+    </string-array>
+    <string-array name="kategori_item">
+        <item>Semua Kategori Item</item>
+        <item>Mechanical</item>
+        <item>Electrical</item>
+    </string-array>
+    <string-array name="merk_mobil">
+        <item>Semua Kategori Merk Mobil</item>
+        <item>Mechanical</item>
+        <item>Electrical</item>
+    </string-array>
+    <string-array name="tipe_mobil">
+        <item>Semua Tipe</item>
+        <item>Mechanical</item>
+        <item>Electrical</item>
+    </string-array>
+    <string-array name="tahun">
+        <item>Semua Tahun</item>
+        <item>2016</item>
+        <item>2015</item>
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+        <item>2011</item>
+        <item>2010</item>
+        <item>2009</item>
+        <item>2008</item>
+        <item>2007</item>
+        <item>2006</item>
+        <item>2005</item>
+        <item>2004</item>
+        <item>2003</item>
+        <item>2002</item>
+        <item>2001</item>
+        <item>2000</item>
+    </string-array>
+    <string name="policy">
+      <![CDATA[
+<div class="media-body">
+                                                                <h4>Syarat dan Ketentuan</h4>
+                                                                <div style="text-align:justify;">
+                                                                <h3>Pendahuluan</h3>
+<p>Selamat datang di website BeliAutoPart.com dan / atau aplikasi mobile BeliAutoPart. Terima kasih telah mengunjungi website kami. Anda harus membaca, memahami, menerima dan menyetujui seluruh persyaratan dan ketentuan dalam Perjanjian ini sebelum memanfaatkan/menggunakan aplikasi dan/atau menerima konten yang terdapat di dalamnya. Dengan mengakses ata menggunakan BeliAutoPart.com ("Situs"), Pengguna dianggap telah memahami dan menyetujui semua isi dalam syarat dan ketentuan di bawah ini. Syarat dan ketentuan dapat diperbaharui atau diubah sewaktu-waktu tanpa ada pemberitahuan terlebih dahulu dan segera berlaku setelah dicantumkan di dalam situs BeliAutoPart.com. Apabila Anda tidak menyetujui Syarat dan Ketentuan ini, maka Anda kami persilahkan berhenti/jangan mengakses dan/atau menggunakan Platform atau Layanan ini.</p>
+
+<h3>Definisi</h3>
+<p>Dalam Syarat dan Ketentuan ini:
+</p><ul>
+<li><b>Akun</b> berarti Akun dari BeliAutoPart.com yang Anda gunakan untuk mendaftar dan bertransaksi di Situs.</li>
+<li><b>Anda</b> atau <b>Pembeli</b> adalah Pengguna terdaftar yang melakukan permintaan atas Barang yang dijual oleh Penjual di Situs BeliAutoPart.com;</li>
+<li><b>Barang</b> adalah benda yang berwujud / memiliki fisik Barang dan dapat diantar / memenuhi kriteria pengiriman oleh perusahaan jasa pengiriman Barang;</li>
+<li><b>Hari Kerja</b> berarti hari Senin hingga Sabtu. Kecuali hari Libur Nasional;</li>
+<li><b>Kami</b> atau <b>Penjual</b> berarti BeliAutoPart.com;</li>
+<li><b>Layanan</b> berarti informasi, layanan dan/atau fungsi yang disediakan didalam Situs.</li>
+<li><b>Pemasok</b> berarti pemilik, penyedia, pemasok, supplier atau merchant dari Barang</li>
+<li><b>Pemesanan</b> berarti pemesanan yang diajukan oleh Anda ke Situs untuk membeli Barang;</li>
+<li><b>Situs BeliAutoPart</b> adalah www.BeliAutoPart.com</li>
+</ul>
+<p></p>
+
+<h3>Ketentuan Penggunaan</h3>
+<p>Saat mengunjungi, menggunakan dan memanfaatkan situs BeliAutoPart.com, termasuk setiap fitur dan layanannya, Setiap Pengguna wajib untuk mematuhi ketentuan Pengguna Situs berikut ini:
+</p><ol type="A">
+<li>Pengguna minimum berusia 18 Tahun, Sudah Pernah Menikah, atau Yang telah memiliki persyaratan yang diakui secara hukum termasuk dalam kategori Pengguna yang sudah dewasa / terlepas dari Hukum Perlindungan Anak.</li>
+<li>Akses situs ini hanya diperkenankan untuk keperluan dan kepentingan berbelanja dan informasi terkait dengan layanan situs ini.</li>
+<li>Pengguna tidak diperkenankan untuk mereproduksi, mendistribusikan, memajang, menjual, menyewakan, mengirimkan, membuat karya turunan dari, menerjemahkan, memodifikasi, merekayasa balik, membongkar, mengurai atau mengeksploitasi situs BeliAutoPart.com.</li>
+<li>Pengguna tidak diperkenankan untuk memuat dan menerbitkan konten yang:
+<ol type="a">
+<li>Melanggar hak cipta, paten, merek dagang, merek layanan, rahasia dagang, atau hak kepemilikan lainnya.</li>
+<li>Mengancam, cabul, tidak senonoh, pornografi atau bisa menimbulkan segala kewajiban Hukum perdata atau pidana Indonesia atau hukum internasional.</li>
+<li>Mengandung bug, virus, worm, pintu perangkap, trojan horse atau kode dan property berbahaya lainnya.</li>
+<li>Produk yang ditawarkan bukan merupakan produk buatan BeliAutoPart.com, tetapi dari Vendor.</li>
+</ol>
+</li>
+</ol>
+<p></p>
+
+<h3>Review &amp; Komentar</h3>
+<p>Seluruh Komentar, Review yang dituliskan, dan gambar/foto/image yang di upload di website BeliAutoPart.com akan dikategorikan dan diperlakukan sebagai konten yang bersifat tidak rahasia.
+</p><ol type="A">
+<li>Review yang telah dituliskan menjadi milik BeliAutoPart.com dan tidak dapat dikembalikan.</li>
+<li>Gambar/Foto/Image yang diupload melalui fitur Customer Image adalah milik masing-masing, BeliAutoPart.com tidak dapat dituntut atas haki maupun etiket foto.</li>
+<li>Anda dilarang menulis dengan menggunakan identitas orang lain.</li>
+<li>Anda dilarang untuk menuliskan komentar atau review atau gambar/foto/image yang mengandung kalimat/analogi pelecehan terhadap BeliAutoPart.com atau pihak ketiga lainnya/masyarakat.</li>
+<li>BeliAutoPart.com berhak merubah atau menghapus komentar, review dan gambar/foto/image yang mengandung unsur yang tidak layak tayang (SARA, Pornografi, Pelecehan, Penghinaan, Pencemaran, dsb).</li>
+</ol>
+<p></p>
+
+<h3>Transaksi</h3>
+<p>Harga yang tertera di website BeliAutoPart.com belum termasuk Ongkos Kirim, Tarif Armada ataupun kurir ke luar kota (ekspedisi).
+</p><ol type="A"><li>Untuk pembelian online melalui shopping cart, pesanan dan pengiriman akan diproses setelah pembayaran diterima oleh rekening bank atau payment gateway atas nama PT. BeliAutoPart. Lama waktu pengiriman disesuaikan dengan area layanan daerah tujuan. Untuk pengiriman yang yang menggunakan ekspedisi, kami bekerja sama dengan pihak jasa kurir services dengan disertai asuransi untuk mencegah kehilangan atau kerusakan selama dalam perjalanan.</li>
+<li>Sebagian barang tidak ex-stock sehingga diperlukan pemesanan sebelumnya.</li>
+<li>Setiap produk yang dibeli dari BeliAutoPart.com dilengkapi dengan masa garansi yang disesuaikan dengan garansi pabrik masing-masing produk. Silakan klik garansi produk dan purna jual untuk informasi selengkapnya.</li>
+<li>Barang yang telah dibeli tidak dapat dikembalikan atau ditukar dengan barang lain, kecuali ada perjanjian terlebih dahulu.</li>
+<li>Segala usaha maksimal telah dilakukan untuk menyakinkan ketepatan seluruh informasi yang dimuat. BeliAutoPart.com tidak menjamin dengan segala hormat akan ketepatan data tersebut, termasuk spesifikasi produk maupun editorial.</li>
+</ol>
+<p></p>
+
+<h3>Retur dan Refund</h3>
+<p>
+</p><ol type="A">
+<li>Pelanggan harus memahami dan menyetujui bahwa ketersediaan stok Barang sepenuhnya merupakan tanggung jawab Pemasok yang menawarkan Barang tersebut. Terkait ketersediaan stok Barang dapat berubah sewaktu-waktu, sehingga dalam keadaan stok Barang kosong, maka Pemasok akan atau dapat menolak Pemesanan yang kemudian akan diinformasikan oleh BeliAutoPart.com kepada Anda, dan Pemasok akan mengembalikan pembayaran atas Barang yang bersangkutan kepada Pelanggan.</li>
+<li>Jika Anda tidak puas dengan Barang yang Anda terima, Anda dapat mengembalikan Barang kepada kami dalam waktu paling lambat empat belas (14) hari kalender sejak Barang diterima dengan ketentuan Barang harus belum digunakan, Barang tidak rusak, Barang tidak cacat, Barang tidak bernoda, tag Barang tidak rusak dan Barang utuh serta tidak ada bagian yang berkurang atau lepas, serta Barang harus dalam kemasan merek asli dan kemasan/dos tidak rusak (masih utuh) Kebijakan ini hanya berlaku untuk Barang yang tidak terdapat dalam daftar Barang yang tidak dapat dikembalikan yang terdapat pada Situs kami</li>
+<li>Kami menyediakan layanan pengiriman pra-bayar (COD) untuk menyediakan pengalaman belanja online yang terbaik untuk Anda. hubungi Tim Layanan Pelanggan kami di 021-123456 atau email help@BeliAutoPart.com untuk keterangan lebih lanjut</li>
+<li>Anda dapat memproses pengembalian Barang melalui Jasa Pengiriman yang Anda pilih.</li>
+<li>Barang yang Anda kembalikan bersama dengan slip pengembalian Anda, akan kami proses setelah barang tersebut kami terima dalam gudang kami melalui jasa pengiriman yang Anda pilih. Pengembalian dana kepada Anda akan dilakukan segera setelah kami menerima Barang Anda dalam keadaan sebagaimana dimaksud pasal di atas, sesuai dengan metode pengembalian Barang yang Anda pilih pada slip pengembalian Barang Anda.</li>
+<li>Jika dalam masa garansi, terjadi kerusakan pada barang, silakan menghubungi Technical Center kami di nomor 021-654321 atau email support@BeliAutoPart.com</li>
+<li>Bila bantuan melalui telephone tidak berhasil, silakan kirim kembali produk yang rusak kepada kami. Biaya pengiriman kembali produk yang telah diperbaiki/tukar akan menjadi tanggungan kami, dengan demikian kami memiliki tanggung jawab untuk memberikan produk yang berkualitas baik.</li>
+<li>Anda akan menerima email notifikasi mengenai Nomor Resi Pengiriman sesaat setelah produk pesanan Anda dikirim. Anda juga dapat memantau status pesanan Anda melalui aplikasi/website BeliAutoPart.com.</li>
+</ol>
+<p></p>
+
+<h3>Barang Rusak</h3>
+<p>
+</p><ol type="A">
+<li>Semua deskripsi, informasi, data, dan/atau materi dalam bentuk apapun dan itupun termasuk deskripsi mengenai Barang yang diposting dalam Situs ini disediakan apa adanya seperti apa yang dilihat dan tanpa adanya pernyataan, jaminan maupun janji baik yang tersirat maupun yang tersurat atau makna apapun yang tersembunyi.</li>
+<li>Gambar Barang seperti yang terlihat di Situs dapat sedikit berbeda dari Barang yang sebenarnya yang Anda terima.</li>
+<li>Jika Barang yang Anda terima rusak, silahkan hubungi Tim Layanan Pelanggan kami dan memberikan nomor Pemesanan, nama dan alamat Anda, rincian Barang dan alasan pengembalian Barang, dan apakah Anda memerlukan pengembalian atau Barang pengganti.</li>
+<li>Setelah kami menerima Barang yang Anda kembalikan karena rusak, kami akan memeriksanya dan kami akan memberitahu Anda tentang hak Anda untuk penggantian Barang (jika ada) atau pengembalian dana melalui email sesegera mungkin sesuai dengan Syarat dan Ketentuan yang berlaku.</li>
+<li>Dalam hal Anda mengembalikan kepada kami Barang yang tidak rusak, kami memiliki hak untuk memutuskan untuk tidak memperbaiki Barang tersebut atau mengganti Barang tersebut dengan Barang yang baru atau mengembalikan uang Anda. Kami juga berhak untuk mewajibkan Anda untuk membayar semua biaya yang telah kami keluarkan terkait dengan pemesanan maupun pengiriman Barang kepada Anda maupun dengan proses pengembalian Barang oleh Anda kepada kami sesuai dengan standar biaya kami yang berlaku pada saat tersebut, termasuk tetapi tidak terbatas pada biaya pelayanan biaya kartu kredit atau debit, maupun seluruh biaya maupun pembayaran sebagaimana tercantum dalam Pemesanan Anda. Sepanjang tidak bertentangan dengan hukum yang berlaku, kami tidak bertanggung jawab kepada Anda atas segala kerugian atau segala biaya, ongkos maupun pengeluaran yg anda keluarkan atau anda bayarkan. sehubungan dengan atau yang timbul dari hal-hal sebagaimana diatur dalam persetujuan ini.</li><br>
+</ol>
+<p></p>
+
+<h3>Harga dan Deskripsi Produk</h3>
+<p>Jika dalam keadaan tertentu, terdapat kesalahan harga ataupun informasi mengenai suatu produk tertentu yang disebabkan oleh kesalahan pengetikan (Typo) atau kesalahan harga dan informasi yang berasal dari supplier, BeliAutoPart.com berhak untuk menolak ataupun membatalkan pesanan yang menggunakan harga yang salah termasuk pesanan yang sudah dibayarkan. Jika pesanan tersebut sudah dibayarkan dengan Kartu Kredit, dan kartu kredit Anda telah dikenakan biaya untuk pembelian tersebut, maka kami akan melakukan pengembalian dana sesuai dengan jumlah yang telah dibayarkan.</p>
+<p>Kami akan melakukan upaya terbaik untuk memastikan bahwa semua rincian, deskripsi dan harga yang muncul pada Situs adalah sesuai dengan informasi yang kami terima dari Pemasok, namun terdapat kondisi-kondisi dimana dimungkinkan terjadi kesalahan. Jika kami menemukan kesalahan pada rincian, deskripsi dan/atau harga pada Situs, atas Barang Jasa yang telah Anda pesan dalam Pemesanan, kami akan memberitahu Anda tentang hal tersebut sesegera mungkin dan memberikan pilihan untuk menegaskan kembali Pemesanan Anda dengan rincian, deskripsi dan/atau harga yang benar atau membatalkannya. Jika kami tidak dapat menghubungi Anda, maka kami akan melakukan pembatalan Pemesanan Anda.</p>
+<p>BeliAutoPart.com selalu berusaha untuk memberikan deskripsi produk seakurat mungkin. Tetapi kami tidak dapat 100% menjamin bahwa seluruh deskripsi atau konten yang terdapat di dalam website adalah akurat, lengkap, terbaru, atau bebas error. Jika produk yang ditawarkan oleh BeliAutoPart.com tidak sesuai dengan yang tertera dalam deskripsi produk, maka Anda dapat mengembalikannya dalam keadaan belum terpakai/buka segel.</p>
+
+
+<h3>Ketersediaan Barang</h3>
+<p>Demi mempertahankan harga jual yang tetap kompetitif, sangat sukar bagi pihak kami untuk selalu menyediakan (ready stock) setiap produk yang kami tampilkan di BeliAutoPart.com. Staff kami akan dengan senang hati mengkonfirmasikan kembali jika ada beberapa produk yang perlu dipesan serta lamanya waktu pemesanan. Kami percaya hanya dengan cara inilah, kami tetap bisa menjaga harga jual yang terbaik bagi pelanggan kami.</p>
+
+
+<h3>Pengguna Terdaftar � Membership</h3>
+<p>
+</p><ol type="A">
+<li>Menjadi Pengguna Terdaftar, selanjutnya akan disebut sebagai Member BeliAutoPart.com, tanpa dipungut biaya / gratis.</li>
+<li>Dengan memilih untuk membuat akun sebagai member dari situs BeliAutoPart.com, Member BeliAutoPart.com akan membuat sebuah nama akun dan password ketika menyelesaikan proses registrasi.</li>
+<li>Member BeliAutoPart.com bertanggung jawab untuk menjaga kerahasiaan dan keamanan atas nama akun dan password serta Pengguna Terdaftar bertanggung jawab sepenuhnya atas segala kegiatan yang diatasnamakan nama akun Pengguna Terdaftar.</li>
+<li>Member BeliAutoPart.com menyetujui untuk:
+<ol type="a">
+<li>Segera memberitahukan kepada Kami setiap adanya dugaan penggunaan yang tidak sah / valid dengan pengatasnamaan nama akun Member Anda.</li>
+<li>Memastikan bahwa Member BeliAutoPart.com keluar (log out) dari akun pada setiap akhir dari aktivitas pada situs BeliAutoPart.com untuk menghindari kemungkinan terjadinya penyalahgunaan atas akun yang bersangkutan.</li>
+<li>Kami berhak sepenuhnya untuk membatasi, memblokir atau mengakhiri pelayanan dari suatu akun, melarang akses ke situs BeliAutoPart.com dan konten, layanan, dan memperlambat atau menghapus hosted content, dan mengambil langkah-langkah hukum untuk menjaga Member BeliAutoPart.com atau pengguna lain jika Kami menganggap Member BeliAutoPart.com atau pengguna lain melanggar hukum-hukum yang berlaku, melanggar hak milik intelektual dari pihak terkait, atau melakukan suatu pelanggaran yang melanggar hal-hal yang tertera pada Perjanjian ini.</li>
+<li>Bahwa Member BeliAutoPart.com tidak diperkenankan menjual, berupaya menjual, menawarkan untuk menjual, memberikan, menyerahkan atau mengalihkan Akun, Identitas Pengguna atau Sandi kepada pihak ketiga tanpa sepengetahuan dan persetujuan tertulis sebelumnya dari Kami. Kami dapat menangguhkan atau menghentikan Akun Member BeliAutoPart.com atau Akun pihak yang menerima pengalihan dari Member BeliAutoPart.com yang dijual, ditawarkan untuk dijual, diberikan, diserahkan atau dialihkan dengan melanggar ketentuan dalam Pasal ini. Apabila dengan keterbatasan kemampuan Kami dalam mengidentifikasi pelanggaran ini, maka seluruh akibat, resiko adalah merupakan tanggung jawab dari Member BeliAutoPpart.Com yang mengalihkan.</li>
+</ol>
+</li>
+</ol>
+<p></p>
+
+<h3>Keadaan Di Luar Kendali (FORCE MAJEURE)</h3>
+<p>Kami tidak bertanggung jawab kepada Anda untuk setiap pelanggaran, hambatan atau keterlambatan dalam pelaksanaan Kontrak maupun Syarat dan Ketentuan ini oleh kami yang disebabkan oleh keadaan kahar (force majeure) maupun keadaan atau kondisi apapun di luar kendali kami, termasuk namun tidak terbatas pada:
+</p><ol type="a">
+<li>pemogokan, lock-out atau tindakan industrial lainnya;</li>
+<li>keributan sipil, kerusuhan, invasi, serangan teroris atau ancaman serangan teroris, perang (baik dinyatakan atau tidak) atau ancaman atau persiapan untuk perang;</li>
+<li>kebakaran, ledakan, badai, banjir, gempa bumi, longsor, wabah atau bencana alam lainnya.</li>
+<li>ketidakmungkinan penggunaan kereta api, pesawat pengirim, alat transportasi bermotor atau alat transportasi lainnya baik publik atau swasta;</li>
+<li>ketidakmungkinan penggunaan jaringan telekomunikasi publik atau swasta;</li>
+<li>tindakan, keputusan, undang-undang, peraturan atau pembatasan dari pemerintah, pengiriman, pos atau aksi mogok transportasi lain yang berkaitan, kegagalan atau kecelakaan; dan/atau</li>
+<li>kerusakan pada jaringan atau sistem komputer atau sistem internet pada Situs kami.</li>
+</ol>
+<ol type="A">
+<li>Dalam hal keadaan atau peristiwa sebagaimana dimaksud di atas berlangsung selama lebih dari satu minggu, baik Anda atau kami dapat segera mengakhiri Kesepakatan dengan menyampaikan pemberitahuan tertulis dan tanpa kewajiban apapun dari kami selain pengembalian Barang yang sudah Anda pesan melalui Pemesanan dan sudah Anda bayar namun belum kami kirimkan.</li>
+<li>Jika kami telah memberikan Kesepakatan untuk menyediakan Barang yang identik atau mirip dengan lebih dari satu Pelanggan namun kami tidak dapat memenuhi kewajiban kami kepada Anda karena terjadinya satu atau lebih peristiwa sebagaimana dimaksud tersebut di atas, kami berhak untuk memutuskan Kesepakatan mana yang akan tetap berlaku dan Kesepakatan mana yang akan kami akhiri.</li>
+<li>Kami memiliki kebijaksanaan mutlak untuk menentukan solusi yang akan kami ambil dalam memenuhi kewajiban kami berdasarkan Kesepakatan dalam hal terjadi peristiwa sebagaimana dimaksud tersebut di atas.</li>
+</ol>
+<p></p>
+
+<h3>Pemberitahuan</h3>
+<p>Setiap pemberitahuan kepada Anda maupun Pelanggan sehubungan dengan Kesepakatan akan diberikan secara tertulis baik melalui surat atau email kepada pihak yang bersangkutan di alamat atau alamat e-mail terakhir yang diketahui.
+</p><ol type="a">
+<li>Pemberitahuan yang disampaikan melalui pos harus dianggap telah diterima oleh yang bersangkutan dalam waktu dua (2) Hari Kerja sejak tanggal pengiriman, jika pengiriman ditujukan ke alamat penerima di Indonesia.</li>
+<li>Pemberitahuan yang disampaikan melalui email dianggap telah diterima oleh yang bersangkutan dalam waktu dua (2) hari kalender sejak tanggal email dikirim.</li>
+</ol>
+Dalam membuktikan pengiriman pemberitahuan, cukup dibuktikan dengan surat atau email tersebut benar-benar dikirimkan.
+<p></p>
+
+<h3>Hak Atas Kekayaan Intelektual</h3>
+<p>
+</p><ol type="A">
+<li>Semua isi, konten, materi, data, deskripsi, gambar maupun informasi yang ditampilkan pada Situs maupun yang ditempatkan atau terdapat dalam Situs termasuk tetapi tidak terbatas pada teks, grafik, logo, tombol ikon, gambar, klip audio, digital download, judul kampanye dan/atau kompilasi data milik BeliAutoPart.com serta data Pemasok (termasuk pemasok konten) sepenuhnya [merupakan milik kami atau pemegang lisensinya] yang dilindungi oleh undang-undang. Anda tidak diizinkan untuk mempublikasikan, memanipulasi, mendistribusikan, menggandakan, menyebarluaskan dan/atau mereproduksi dengan cara maupun dalam bentuk atau format apapun, satu atau lebih isi, konten, materi, data, deskripsi, gambar maupun informasi yang ditampilkan pada Situs maupun salinannya untuk keperluan apapun termasuk tetapi tidak terbatas untuk keperluan bisnis Anda maupun dalam rangka kerjasama dengan pihak manapun.</li>
+<li>Setiap grafis, logo, judul halaman, tombol ikon, teks, maupun nama layanan yang termasuk dalam atau tersedia dalam Situs adalah merek dagang milik kami atau pemegang lisensi, dilindungi oleh Undang-Undang Hak Cipta di Indonesia dan Undang-Undang Hak Cipta Internasional. Merek dagang BeliAutoPart.com tidak dapat dengan cara apapun dan dalam kondisi apapun digunakan dalam kaitannya dengan barang, jasa, produk dan/atau hal lainnya yang tidak tersedia pada Situs kami, termasuk dengan cara apapun yang atau mungkin dapat menyebabkan kebingungan di kalangan publik maupun Pelanggan atau dengan cara yang meremehkan atau mendiskreditkan BeliAutoPart.com, Situs dan/atau. Semua merek dagang atau [hak atas kekayaan intelektual lainnya] yang tidak dimiliki oleh kami yang muncul di Situs adalah milik masing-masing pemiliknya.</li>
+<li>Status kami (dan bahwa setiap kontributor diidentifikasi) sebagai penulis konten di Situs.</li>
+<li>Anda tidak boleh menggunakan bagian manapun dari Situs kami maupun sebagian atau seluruh isi, konten, materi, data, deskripsi, gambar maupun informasi yang ditampilkan pada Situs maupun yang ditempatkan atau terdapat dalam Situs kami untuk tujuan apapun termasuk untuk tujuan komersial tanpa memperoleh lisensi langsung dan resmi serta secara tertulis terlebih dahulu dari kami atau pemegang lisensi. Dalam hal kami mengetahui adanya pelanggaran hak atas kekayaan intelektual, kami dapat mengambil tindakan hukum sesuai dengan ketentuan hukum dan peraturan perundang-undangan yang berlaku.</li>
+<li>Jika Anda mencetak, menyalin atau mengunduh bagian manapun dari Situs kami namun melanggar satu atau lebih Syarat dan Ketentuan ini, hak Anda untuk menggunakan Situs akan segera dihentikan tanpa pemberitahuan terlebih dahulu dan tanpa diperlukan ijin dari Anda dan Anda wajib untuk, sesuai keputusan atau kebijakan kami, mengembalikan atau memusnahkan setiap salinan isi, konten, materi, data, deskripsi, gambar maupun informasi yang ditampilkan pada Situs maupun yang ditempatkan atau terdapat dalam Situs kami yang telah Anda buat atau Anda akses atau Anda miliki. Anda dilarang dengan cara apapun memodifikasi, menerjemahkan, menguraikan, membongkar atau membuat karya turunan berdasarkan perangkat lunak atau dokumentasi yang menyertainya disediakan oleh kami maupun oleh pemegang lisensi yang bersangkutan.</li>
+</ol>
+<p></p>
+
+<h3>Iklan Pada Situs</h3>
+<p>
+Kami akan berupaya semaksimal mungkin untuk mematuhi setiap peraturan yang relevan yang berkaitan dengan pengelolaan Situs termasuk Undang-Undang No. 11 tahun 2008 tentang Informasi dan Transaksi Elektronik.
+</p>
+
+<h3>Link ke Situs</h3>
+<p>
+</p><ol type="A">
+<li>Anda dapat membuat link ke halaman depan kami, sepanjang Anda melakukannya dengan cara yang legal dan tidak bertujuan untuk merusak reputasi kami atau mengambil keuntungan dari itu, namun Anda dilarang untuk membangun link sedemikian rupa untuk menunjukkan bentuk asosiasi, persetujuan atau dukungan dari pihak kami apabila tidak ada.</li>
+<li>Anda tidak diperkenankan untuk membuat link dari setiap situs yang tidak dimiliki oleh Anda.</li>
+<li>Situs ini tidak boleh dibingkai pada situs lain, dan Anda tidak diperkenankan untuk membuat link ke bagian manapun dari Situs ini selain halaman depan. Kami berhak untuk menarik izin penghubungan atau link tanpa pemberitahuan kepada Anda dan tanpa persetujuan Anda.</li>
+<li>BeliAutoPart.com tidak bertanggung jawab atas isi dan konten link di luar Situs atau situs yang disediakan atau dipasang oleh pihak ketiga, baik yang dimasukkan oleh Pelanggan yang tidak disebutkan namanya atau oleh mitra dari BeliAutoPart.com atau oleh pihak manapun. Dengan ditampilkannya link, situs atau konten pihak ketiga dalam Situs, tidak dapat diartikan atau dianggap atau diasumsikan bahwa BeliAutoPart.com maupun pihak terafiliasi, pejabat, petugas atau pegawainya memiliki hubungan kerjasama dengan pihak ketiga tersebut.</li>
+</ol>
+<p></p>                                                         </div>
+                                                        </div>
+      ]]>
+    </string>
+</resources>

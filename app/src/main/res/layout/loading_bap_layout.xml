@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="105dp"
+    android:layout_height="105dp">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/lB"
+        android:background="@drawable/satellite">
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="B"
+        android:id="@+id/textView85"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:typeface="sans"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginLeft="21dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/lA"
+        android:background="@drawable/satellite"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/lB"
+        android:layout_toEndOf="@+id/lB"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="2dp"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/satellite"
+        android:id="@+id/lP"
+        android:layout_marginLeft="40dp"
+        android:layout_alignParentEnd="false"
+        android:layout_marginTop="50dp"></RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="A"
+        android:id="@+id/textView87"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="75.5dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="P"
+        android:id="@+id/textView89"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="58dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+</RelativeLayout>

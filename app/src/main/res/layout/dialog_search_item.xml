@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp"
+    android:background="#FFFFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PILIH KEBUTUHAN ANDA"
+                android:id="@+id/textView9"
+                android:textAlignment="center"
+                android:layout_alignParentTop="false"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/_15sdp" />
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:id="@+id/btnBack"
+                android:background="@drawable/back192"
+                android:layout_margin="10dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LinearLayout"
+            android:orientation="vertical"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_margin="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edittext"
+                android:id="@+id/relativeLayout27"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="@drawable/bg_red_rounded"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="false"
+                    android:id="@+id/btnSearch">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:id="@+id/imageView11"
+                        android:background="@drawable/cari192"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SearchInput"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_toStartOf="@+id/btnSearch"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:background="@android:color/white"
+                    android:hint="nama parts, part number"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toLeftOf="@+id/btnSearch"
+                    android:layout_marginRight="5dp"
+                    android:layout_alignBottom="@+id/btnSearch"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout27"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/frameLayout"></FrameLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/LinearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_weight="1"
+                android:text="Cari"
+                android:id="@+id/btnSimpan"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/bg_button"
+                android:layout_margin="10dp"
+                android:textColor="#FFFFFF" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

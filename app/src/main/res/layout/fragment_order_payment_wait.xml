@@ -1,0 +1,764 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView7">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                android:layout_below="@+id/relativeLayout10"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_card_red" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/relativeLayout10"
+                android:id="@+id/layoutStatus"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Status Saat Ini:"
+                    android:id="@+id/textView50"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Menunggu pembayaran pesanan Anda.\nBatas waktu pembayaran adalah 30 menit."
+                    android:id="@+id/txtStatus"
+                    android:layout_below="@+id/textView50"
+                    android:layout_alignLeft="@+id/textView50"
+                    android:layout_alignStart="@+id/textView50"
+                    android:lineSpacingExtra="3dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="30:00"
+                    android:id="@+id/txtTimer"
+                    android:layout_below="@+id/txtStatus"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_status1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                android:layout_below="@+id/card_view_status"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+            <FrameLayout
+                android:layout_width="4dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/left_card_red" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/layoutStatus"
+                android:layout_alignParentBottom="false"
+                android:minHeight="160dp"
+                android:id="@+id/relative1"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Nominal Pembayaran:"
+                    android:id="@+id/textView52"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Rp.100000"
+                    android:id="@+id/txtNominalPembayaran"
+                    android:layout_below="@+id/textView52"
+                    android:layout_alignLeft="@+id/textView52"
+                    android:layout_alignStart="@+id/textView52"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingExtra="3dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Nomor Rekening Tujuan Transfer:"
+                    android:id="@+id/textView51"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/txtNominalPembayaran"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/linierLayoutRekening"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/textView51"
+                    android:layout_marginBottom="10dp" />
+
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/relativeLayout10"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order No."
+                    android:id="@+id/txtNomorOrder"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginBottom="6dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="26dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_alignParentTop="false"
+                android:layout_below="@+id/card_view_status1"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="false"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Pembayaran Via:"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relativeLayout28"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/relativeLayout28"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView99"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView99"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bca" />
+
+                        <ImageView
+                            android:id="@+id/imageView14"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/imageView10"
+                            android:layout_toRightOf="@+id/imageView10"
+                            android:layout_weight="1"
+                            android:src="@drawable/mandiri" />
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignTop="@+id/imageView14"
+                            android:layout_toEndOf="@+id/imageView14"
+                            android:layout_toRightOf="@+id/imageView14"
+                            android:layout_weight="1"
+                            android:src="@drawable/bni" />
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imageView15"
+                            android:layout_toRightOf="@+id/imageView15"
+                            android:layout_weight="1"
+                            android:src="@drawable/bri" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_metode2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_transfer"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true"
+                android:onClick="dialogFitur">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/relativeLayout26"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kartu Kredit"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView101"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView17"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/visa" />
+
+                        <ImageView
+                            android:id="@+id/imageView18"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/imageView17"
+                            android:layout_toRightOf="@+id/imageView17"
+                            android:layout_weight="1"
+                            android:src="@drawable/mastercard" />
+
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignTop="@+id/imageView18"
+                            android:layout_toEndOf="@+id/imageView18"
+                            android:layout_toRightOf="@+id/imageView18"
+                            android:layout_weight="1"
+                            android:src="@drawable/bni"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView20"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imageView19"
+                            android:layout_toRightOf="@+id/imageView19"
+                            android:layout_weight="1"
+                            android:src="@drawable/bri"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_metode3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_metode2"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true"
+                android:onClick="dialogFitur">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/relativeLayout29"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView102"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ATM"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView102"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/atmbersama" />
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/imageView21"
+                            android:layout_toRightOf="@+id/imageView21"
+                            android:layout_weight="1"
+                            android:src="@drawable/prima" />
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignTop="@+id/imageView22"
+                            android:layout_toEndOf="@+id/imageView22"
+                            android:layout_toRightOf="@+id/imageView22"
+                            android:layout_weight="1"
+                            android:src="@drawable/alto"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imageView23"
+                            android:layout_toRightOf="@+id/imageView23"
+                            android:layout_weight="1"
+                            android:src="@drawable/bri"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_metode4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_metode3"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true"
+                android:onClick="dialogFitur">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/relativeLayout31"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView103"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CIMB Clicks"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView103"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/cmbclick" />
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/imageView25"
+                            android:layout_toRightOf="@+id/imageView25"
+                            android:layout_weight="1"
+                            android:src="@drawable/prima"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView27"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignTop="@+id/imageView26"
+                            android:layout_toEndOf="@+id/imageView26"
+                            android:layout_toRightOf="@+id/imageView26"
+                            android:layout_weight="1"
+                            android:src="@drawable/alto"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView28"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imageView27"
+                            android:layout_toRightOf="@+id/imageView27"
+                            android:layout_weight="1"
+                            android:src="@drawable/bri"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_metode5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_metode4"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true"
+                android:onClick="dialogFitur">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/relativeLayout32"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView104"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mandiri Clickpay"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView104"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView29"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/madiriclickpay" />
+
+                        <ImageView
+                            android:id="@+id/imageView30"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/imageView29"
+                            android:layout_toRightOf="@+id/imageView29"
+                            android:layout_weight="1"
+                            android:src="@drawable/prima"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView31"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignTop="@+id/imageView30"
+                            android:layout_toEndOf="@+id/imageView30"
+                            android:layout_toRightOf="@+id/imageView30"
+                            android:layout_weight="1"
+                            android:src="@drawable/alto"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView32"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imageView31"
+                            android:layout_toRightOf="@+id/imageView31"
+                            android:layout_weight="1"
+                            android:src="@drawable/bri"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view_metode6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_view_metode5"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/left_card_red"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardUseCompatPadding="true"
+                android:onClick="dialogFitur">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/relativeLayout33"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView105"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BCA Clickpay"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/textView105"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView33"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_weight="1"
+                            android:src="@drawable/bcapay" />
+
+                        <ImageView
+                            android:id="@+id/imageView34"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentTop="true"
+                            android:layout_toEndOf="@+id/imageView33"
+                            android:layout_toRightOf="@+id/imageView33"
+                            android:layout_weight="1"
+                            android:src="@drawable/prima"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView35"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignTop="@+id/imageView34"
+                            android:layout_toEndOf="@+id/imageView34"
+                            android:layout_toRightOf="@+id/imageView34"
+                            android:layout_weight="1"
+                            android:src="@drawable/alto"
+                            android:visibility="invisible" />
+
+                        <ImageView
+                            android:id="@+id/imageView36"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_toEndOf="@+id/imageView35"
+                            android:layout_toRightOf="@+id/imageView35"
+                            android:layout_weight="1"
+                            android:src="@drawable/bri"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout></ScrollView>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="@dimen/_320sdp"
+android:layout_height="@dimen/_48sdp"
+android:id="@+id/linearLayout5"
+android:orientation="horizontal"
+android:background="@color/colorPrimary"
+android:layout_gravity="center_horizontal"
+android:layout_alignParentTop="false"
+android:layout_alignParentLeft="true"
+android:layout_alignParentStart="true"
+android:layout_alignParentBottom="true"
+android:visibility="gone">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@drawable/bottom_button_one_selector"
+    android:id="@+id/lbtnkonfirmasi">
+
+    <ImageView
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:id="@+id/btnKonfirmasi"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:src="@drawable/checkmark48"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Konfirmasi Pembayaran"
+        android:id="@+id/textView88"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="@dimen/_8sdp"
+        android:layout_below="@+id/btnKonfirmasi"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+</RelativeLayout>
+</LinearLayout></RelativeLayout>

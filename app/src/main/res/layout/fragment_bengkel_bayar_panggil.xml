@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_above="@+id/linearLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" >
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pembayaran Biaya Panggil Bengkel"
+                    android:id="@+id/txtTitle"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:layout_marginRight="20dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_cart_list"
+                    android:id="@+id/relativeLayout11"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Job ID :"
+                        android:id="@+id/textView66"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="1234567890"
+                        android:id="@+id/txtJobID"
+                        android:layout_below="@+id/textView66"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cart_list"
+                    android:layout_below="@+id/relativeLayout11"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relativeLayout19"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Nama bengkel :"
+                        android:id="@+id/textView68"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Nama Bengkel"
+                        android:id="@+id/txtNamaBengkel"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="3dp"
+                        android:layout_below="@+id/textView68"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cart_list"
+                    android:layout_below="@+id/relativeLayout19"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/relativeLayout20"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Jarak Dari Lokasi Anda:  "
+                        android:id="@+id/textView70"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="56km"
+                        android:id="@+id/txtJarak"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="3dp"
+                        android:layout_below="@+id/textView70"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cart_list"
+                    android:layout_below="@+id/relativeLayout20"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/relativeLayout21"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Status Saat ini :"
+                        android:id="@+id/textView72"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Menunggu Pembayaran Biaya Pemanggilan Bengkel"
+                        android:id="@+id/textView73"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/textView72"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="3dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cart_list"
+                    android:layout_below="@+id/relativeLayout21"
+                    android:id="@+id/relativeLayout22"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Biaya Pemanggilan Bengkel :"
+                        android:id="@+id/textView74"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Anda telah menyetujui bahwa Anda akan akan dibantu oleh bengkel tersebut, silakan lakukan pembayaran biaya panggil bengkel sebagai berikut:"
+                        android:id="@+id/textView75"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/textView74"
+                        android:lineSpacingExtra="3dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Nominal Pembayaran:"
+                        android:id="@+id/textView78"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_below="@+id/textView75"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Rp 50.000"
+                        android:id="@+id/txtNominalPembayaran"
+                        android:layout_below="@+id/textView78"
+                        android:lineSpacingExtra="3dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Nomor Rekening Tujuan Transfer:"
+                        android:id="@+id/textView67"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_below="@+id/txtNominalPembayaran"
+                        android:layout_alignLeft="@+id/txtNominalPembayaran"
+                        android:layout_alignStart="@+id/txtNominalPembayaran"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:lineSpacingExtra="3dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/linierLayoutRekening"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/textView67"
+                        android:layout_marginBottom="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_cart_list"
+                    android:layout_below="@+id/relativeLayout22"
+                    android:id="@+id/relativeLayout23"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Informasi:"
+                        android:id="@+id/textView76"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Jika Anda ingin melakukan tanya jawab dengan bengkel yang merespon request Anda, klik tombol CHAT\nJika Anda ingin membatalkan request, Klik tombol BATAL"
+                        android:id="@+id/textView77"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/textView76"
+                        android:layout_marginBottom="10dp"
+                        android:lineSpacingExtra="3dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbtnSimpan"
+            android:background="@drawable/bottom_button_left_selector">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnSimpan"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/delete48"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Batal"
+                android:id="@+id/textView36"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnSimpan"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbtnChat"
+            android:background="@drawable/bottom_button_center_selector">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnChat"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/chat"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Chat"
+                android:id="@+id/textView37"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnChat"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbtnBayar"
+            android:background="@drawable/bottom_button_right_selector">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnBayar"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/right"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Bayar"
+                android:id="@+id/textView38"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnBayar"
+                android:layout_alignRight="@+id/btnBayar"
+                android:layout_alignEnd="@+id/btnBayar" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

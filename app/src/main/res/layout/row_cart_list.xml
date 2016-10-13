@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardCornerRadius="4dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/left_card_red">
+        <FrameLayout
+            android:background="@drawable/left_card_red"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginBottom="4dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgProduk"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgProduk"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relativeLayout14"
+        android:layout_alignBottom="@+id/imgProduk">
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Kode Produk"
+            android:id="@+id/txtKodeProduk"
+            android:layout_below="@+id/txtNamaProduk"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/txtNamaProduk"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/relativeLayout8">
+
+                <TextView
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="100"
+                    android:id="@+id/txtJumlah"
+                    android:layout_alignBottom="@+id/btnNegative"
+                    android:layout_toRightOf="@+id/btnNegative"
+                    android:layout_toEndOf="@+id/btnNegative"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="-"
+                    android:id="@+id/btnNegative"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/bg_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textColor="#FFFFFF" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="+"
+                    android:id="@+id/btnPlus"
+                    android:textSize="@dimen/_10sdp"
+                    android:background="@drawable/bg_button"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/txtJumlah"
+                    android:layout_toEndOf="@+id/txtJumlah"
+                    android:textColor="#FFFFFF" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Harga"
+                android:id="@+id/txtHarga"
+                android:layout_above="@+id/relativeLayout8"
+                android:layout_alignRight="@+id/relativeLayout8"
+                android:layout_alignEnd="@+id/relativeLayout8"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:textAlignment="textEnd"
+                android:layout_toRightOf="@+id/textView48"
+                android:layout_toEndOf="@+id/textView48"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Total Harga"
+                android:id="@+id/txtTotalHarga"
+                android:layout_below="@+id/relativeLayout8"
+                android:layout_alignRight="@+id/relativeLayout8"
+                android:layout_alignEnd="@+id/relativeLayout8"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:textAlignment="textEnd"
+                android:layout_toRightOf="@+id/textView49"
+                android:layout_toEndOf="@+id/textView49"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Rp."
+                android:id="@+id/textView48"
+                android:textAlignment="textEnd"
+                android:layout_alignTop="@+id/txtHarga"
+                android:layout_alignLeft="@+id/relativeLayout8"
+                android:layout_alignStart="@+id/relativeLayout8"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Rp."
+                android:id="@+id/textView49"
+                android:textAlignment="textEnd"
+                android:layout_alignTop="@+id/txtTotalHarga"
+                android:layout_alignLeft="@+id/relativeLayout8"
+                android:layout_alignStart="@+id/relativeLayout8"
+                android:textSize="@dimen/_12sdp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:text="Batal"
+            android:id="@+id/btnSimpan"
+            android:textSize="@dimen/_5sdp"
+            android:background="@drawable/bg_button"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nama Produk"
+            android:id="@+id/txtNamaProduk"
+            android:textSize="@dimen/_12sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="Negara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/relativeLayout14"
+            android:layout_alignStart="@+id/relativeLayout14"
+            android:id="@+id/txtNegara"
+            android:layout_below="@+id/txtKodeProduk"
+            android:textSize="@dimen/_10sdp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>

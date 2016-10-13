@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bluechat"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Small Text"
+            android:id="@+id/txtNama"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/txtWaktu"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Small Text"
+            android:id="@+id/txtWaktu"
+            android:layout_alignBaseline="@+id/txtNama"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/txtPesan"
+            android:layout_below="@+id/txtNama"
+            android:visibility="gone"
+            android:lineSpacingExtra="3dp" />
+        <com.android.volley.toolbox.NetworkImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNama"
+            android:id="@+id/image"
+            android:layout_alignLeft="@+id/txtWaktu"
+            android:layout_alignStart="@+id/txtWaktu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/txtRead"
+            android:textColor="#FFFFFF"
+            android:layout_margin="5dp"
+            android:layout_below="@+id/image" />
+    </RelativeLayout>
+
+</RelativeLayout>

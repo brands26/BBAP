@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.beliautopart.bengkel.activity.SearchActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="visible"
+        android:background="@drawable/app_background"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/linearLayout"
+        android:id="@+id/relativeLayout24">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputkonfirmPassword"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableLeft="@drawable/password24"
+                    android:drawablePadding="7dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView59"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:password="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Konfirmasi Password"
+                    android:id="@+id/textView59"
+                    android:layout_below="@+id/inputPassword"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputPassword"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableLeft="@drawable/password24"
+                    android:drawablePadding="7dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView58"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:password="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Password"
+                    android:id="@+id/textView58"
+                    android:layout_below="@+id/lspBank"
+                    android:layout_alignParentRight="true"
+                    android:layout_toEndOf="@+id/inputPassword"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputAlamat"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableLeft="@drawable/home24grey"
+                    android:drawablePadding="7dp"
+                    android:layout_below="@+id/textView61"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Masukan Alamat Anda" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Alamat"
+                    android:id="@+id/textView61"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/inputHp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputHp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableLeft="@drawable/phone24"
+                    android:drawablePadding="7dp"
+                    android:layout_below="@+id/textView60"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Masukkan Nomor Handphome" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="No. Handphone"
+                    android:id="@+id/textView60"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/inputEmail"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputEmail"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableLeft="@drawable/message24"
+                    android:layout_below="@+id/textView62"
+                    android:drawablePadding="7dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Masukkan Email" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Email"
+                    android:id="@+id/textView62"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/inputNamadepan" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputNamadepan"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:drawableLeft="@drawable/user24"
+                    android:drawablePadding="7dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_below="@+id/textView64"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:hint="Masukkan Nama" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Nama"
+                    android:id="@+id/textView64"
+                    android:layout_below="@+id/relativeLayout17"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@+id/inputPassword"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/lspPropinsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:padding="10dp"
+                android:layout_below="@+id/textView69"
+                android:layout_margin="10dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spPropinsi"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"/>
+            </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView69"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Propinsi"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="left"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_below="@+id/inputAlamat"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Kab./Kota"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:layout_alignParentStart="false"
+                    android:gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lspPropinsi"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+                <RelativeLayout
+                    android:id="@+id/lspKab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_spinner"
+                    android:padding="10dp"
+                    android:layout_below="@+id/textView71"
+                    android:layout_margin="10dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spKab"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:spinnerMode="dialog"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp" />
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lokasi bengkel"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:layout_alignParentStart="false"
+                    android:gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/lspKab"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+                <RelativeLayout
+                    android:id="@+id/lMap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_below="@+id/textView100"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_cart_list">
+
+                    <fragment
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_300sdp"
+                        android:id="@+id/map"
+                        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+                    <Button
+                        android:id="@+id/btnLokasiSaatIni"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="#ffffff"
+                        android:padding="8dp"
+                        android:background="@color/colorPrimary"
+                        android:layout_below="@+id/map"
+                        android:text="Lokasi saat ini"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="No. Rekening"
+                    android:id="@+id/textView80"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/lMap"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputNoRekening"
+                    android:background="@drawable/bg_edittext"
+                    android:drawableLeft="@drawable/card24"
+                    android:drawablePadding="7dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignRight="@+id/lspKab"
+                    android:layout_alignEnd="@+id/lspKab"
+                    android:layout_below="@+id/textView80"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Masukkan No Rekening Anda" />
+
+                <TextView
+                    android:id="@+id/textView81"
+                    android:layout_width="88dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bank"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:layout_alignParentStart="false"
+                    android:gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/inputNoRekening"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/lspBank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_spinner"
+                android:padding="10dp"
+                android:layout_below="@+id/textView81"
+                android:layout_margin="10dp">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spBank"
+                    android:spinnerMode="dialog"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:id="@+id/relativeLayout17"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="MY PROFILE"
+                        android:id="@+id/textView65"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textColor="@color/colorPrimary" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_button_one_selector"
+            android:id="@+id/lbtnSimpan"
+            android:onClick="onUbahClick">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnSimpan"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/save48"
+                android:background="#00FFFFFF"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Simpan"
+                android:id="@+id/textView34"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnSimpan"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoading"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:layout_alignTop="@+id/relativeLayout24">
+
+        <include
+            layout="@layout/loading_bap_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

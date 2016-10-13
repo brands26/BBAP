@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beliautopart.bengkel.activity.LayoutingActivity"
+    android:background="@drawable/app_background"
+    android:backgroundTintMode="screen">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/toolbar"></FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoading"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+        android:layout_below="@+id/toolbar">
+        <include
+            layout="@layout/loading_bap_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"></include>
+    </RelativeLayout>
+
+
+</RelativeLayout>

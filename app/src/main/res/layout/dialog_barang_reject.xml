@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="4dp"
+    android:background="#FFFFFFFF">
+
+    <RelativeLayout
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Alasan Reject"
+                android:id="@+id/textView9"
+                android:textAlignment="center"
+                android:layout_alignParentTop="true"
+                android:textColor="#FFFFFF"
+                android:layout_margin="8dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/n">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_weight="1"
+                android:text="Foto"
+                android:id="@+id/btnBatal"
+                android:background="@drawable/bg_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#FFFFFF" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_weight="1"
+                android:text="Konfirmasi"
+                android:id="@+id/btnKirim"
+                android:background="@drawable/bg_button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:id="@+id/n"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView12"
+                android:paddingBottom="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LinearLayout"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp">
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/txtItem"
+                            android:layout_width="88dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Item yang Direject:"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+                        <TextView
+                        android:id="@+id/txtItemList"
+                        android:layout_width="88dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingBottom="8dp"
+                        android:paddingTop="8dp"
+                            android:layout_below="@+id/txtItem"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:gravity="left"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp" >
+
+                        <TextView
+                            android:id="@+id/txtMerk"
+                            android:layout_width="88dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Alasan Reject:"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <RelativeLayout
+                            android:id="@+id/ltxtMerk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_edittext"
+                            android:padding="10dp"
+                            android:layout_below="@+id/txtMerk">
+
+                            <Spinner
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/spAlasan"
+                                android:spinnerMode="dialog"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/txtTipe"
+                            android:layout_width="88dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="13sp"
+                            android:text="Deskripsi Alasan Reject:"
+                            android:paddingBottom="8dp"
+                            android:paddingTop="8dp"
+                            android:layout_below="@+id/textView"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:gravity="left"
+                            android:layout_marginLeft="0dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="0dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/inputReject"
+                            android:layout_below="@+id/txtTipe"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:background="@drawable/bg_edittext" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:id="@+id/imgReject"
+                            android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

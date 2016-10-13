@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:app="schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_38sdp"
+    android:background="@drawable/app_topbar"
+    android:layout_margin="0dp"
+    android:contentInsetLeft="10dp"
+    android:contentInsetRight="10dp"
+    android:contentInsetStart="10dp"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetLeft="10dp"
+    app:contentInsetRight="10dp"
+    app:contentInsetStart="10dp"
+    android:theme="@style/AppThemeToolbar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/logotext"
+            android:id="@+id/imgLogo"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txtTitle"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/imgLogo"
+            android:layout_toRightOf="@+id/relativeLayout7"
+            android:layout_toEndOf="@+id/relativeLayout7"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/_16sdp" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:id="@+id/relativeLayout7"
+            android:layout_below="@+id/imgLogo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="right"
+                android:id="@+id/btnBack"
+                android:gravity="center"
+                android:src="@drawable/back"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:layout_alignParentLeft="true" />
+
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="right"
+                android:id="@+id/btnHome"
+                android:gravity="center"
+                android:src="@drawable/home24"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentEnd="false"
+                android:layout_alignParentRight="false"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/_32sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/imgLogo"
+            android:layout_centerVertical="true">
+            <ImageButton
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_gravity="right"
+                android:id="@+id/btnCart"
+                android:gravity="center"
+                android:src="@drawable/cart48"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:scaleType="fitCenter"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+            <TextView
+                android:id="@+id/badge_textView"
+                android:layout_width="@dimen/_17sdp"
+                android:layout_height="@dimen/_17sdp"
+                android:text="10"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/_9sdp"
+                android:background="@drawable/bagde_circle_red"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="false"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageButton
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_gravity="right"
+            android:id="@+id/btnLogout"
+            android:gravity="center"
+            android:src="@drawable/logout"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:id="@+id/btnSimpan"
+            android:src="@drawable/search24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:scaleType="center" />
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:id="@+id/btnCar"
+            android:src="@drawable/car24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:scaleType="center" />
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="right"
+            android:id="@+id/btnMoto"
+            android:src="@drawable/motor24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:scaleType="center" />
+    </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>

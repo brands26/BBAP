@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="com.beliautopart.bengkel.activity.SearchActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="visible"
+        android:background="@drawable/app_background"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="No. Order Terkait: C.2016.05.0026"
+            android:id="@+id/txtKomplainNoOrder"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/inputKomplain"
+            android:gravity="top|left"
+            android:background="@drawable/bg_edittext"
+            android:layout_below="@+id/txtKomplainNoOrder"
+            android:layout_alignRight="@+id/txtKomplainNoOrder"
+            android:layout_alignEnd="@+id/txtKomplainNoOrder"
+            android:layout_alignLeft="@+id/txtKomplainNoOrder"
+            android:layout_alignStart="@+id/txtKomplainNoOrder"
+            android:minHeight="400dp"
+            android:layout_marginBottom="10dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_320sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbtnSimpan"
+            android:background="@drawable/bottom_button_center_selector">
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/btnSimpan"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/save48"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Simpan"
+                android:id="@+id/textView36"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/btnSimpan"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

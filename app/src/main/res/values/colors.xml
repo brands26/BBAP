@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3bb1d9</color>
+    <color name="colorPrimaryDark">#3bb1d9</color>
+    <color name="colorAccent">#3bb1d9</color>
+    <color name="colorPrimaryLight">#89d0e8</color>
+    <color name="red">#d9474f</color>
+    <color name="merahgelap">#bb2733</color>
+    <color name="merahtengah">#c83440</color>
+    <color name="merahterang">#d53f4b</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="green">#5cb85c</color>
+    <color name="gray">#C8CCD4</color>
+</resources>

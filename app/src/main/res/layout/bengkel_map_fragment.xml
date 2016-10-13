@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapLayout"
+        android:visibility="gone">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/WaitResponlayout">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Menunggu Respon Bengkel Terdekat"
+                    android:id="@+id/txtNoOrderVerifikasi"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_verifikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Job ID:"
+                            android:id="@+id/textView565"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="14641406433898830"
+                            android:id="@+id/txtJobID"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView565"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_job_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/textView212"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Menunggu Respon dari Bengkel Terdekat yang Available"
+                            android:id="@+id/txtNomorOrder"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView212"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_job_informasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Informasi"
+                            android:id="@+id/textView2122"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda ingin membatalkan request, klik tombol BATALKAN REQUEST"
+                            android:id="@+id/textView1224"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView2122"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ResponLayout">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView4" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Respon Bengkel Motor Terdekat"
+                    android:id="@+id/txtNoOrderVerifikasi123"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_Respon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Job ID:"
+                            android:id="@+id/textView745"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="14641406433898830"
+                            android:id="@+id/txtJobIDRespon"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView745"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_nama_bengkel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nama Bengkel:"
+                            android:id="@+id/textView512"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Menunggu Respon dari Bengkel Terdekat yang Available"
+                            android:id="@+id/txtnamaBengkel"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView512"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_jarak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Jarak Dari Lokasi Anda:"
+                            android:id="@+id/textView3122"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="0.0 Km"
+                            android:id="@+id/txtjarakDariLokasi"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView3122"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_saat_ini"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/txt123"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Request Anda mendapat Respon dari Bengkel Kami"
+                            android:id="@+id/txtStatusSaatIni"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt123"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_biaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Biaya Pemanggilan Bengkel"
+                            android:id="@+id/textView456"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda menyetujui bahwa Anda akan dibantu oleh bengkel tersebut, bayarlah biaya panggil bengkel sebagai berikut: "
+                            android:id="@+id/txtinfobiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView456" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nominal Pembayaran:"
+                            android:id="@+id/textView4asdasd"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtinfobiaya"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp 50.000"
+                            android:id="@+id/txtbiayaNominal"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_below="@+id/textView4asdasd" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_informasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Informasi:"
+                            android:id="@+id/txt1234"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda ingin melakukan tanya jawab dengan bengkel yang merespon request Anda, klik tombol CHAT"
+                            android:id="@+id/informasi"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt1234"
+                            android:layout_marginBottom="4dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda ingin membatalkan request, Klik tombol BATAL"
+                            android:id="@+id/informasi2"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/informasi"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFFFF">
+
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/PembayaranLayout">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView5" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Pembayaran Biaya Panggil Bengkel"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_Biaya_Panggil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Job ID:"
+                            android:id="@+id/textView745123"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="14641406433898830"
+                            android:id="@+id/txtJobIDRespon2"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView745123"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_nama_bengkel_biaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nama Bengkel:"
+                            android:id="@+id/textView512biaya"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Menunggu Respon dari Bengkel Terdekat yang Available"
+                            android:id="@+id/txtnamaBengkelbiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView512biaya"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_jarak_biaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Jarak Dari Lokasi Anda:"
+                            android:id="@+id/textView3122biaya"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="0.0 Km"
+                            android:id="@+id/txtjarakDariLokasibiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView3122biaya"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_saat_inibiaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/txt123biaya"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Menunggu Pembayaran Biaya Pemanggilan Bengkel"
+                            android:id="@+id/txtStatusSaatInibiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt123biaya"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_biaya_a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Biaya Pemanggilan Bengkel"
+                            android:id="@+id/textView456biaya"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda menyetujui bahwa Anda akan dibantu oleh bengkel tersebut, bayarlah biaya panggil bengkel sebagai berikut: "
+                            android:id="@+id/txtinfobiayabiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView456biaya" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nominal Pembayaran:"
+                            android:id="@+id/textView4asdasdbiaya"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtinfobiayabiaya"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp 50.000"
+                            android:id="@+id/txtbiayaNominalbiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView4asdasdbiaya" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nomor Rekening Tujuan Transfer:"
+                            android:id="@+id/textView4asdasdbiayalis"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtbiayaNominalbiaya"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/linierLayoutRekening"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView4asdasdbiayalis"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="vertical"/>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_informasibiaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Informasi:"
+                            android:id="@+id/txt1234biaya"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda ingin melakukan tanya jawab dengan bengkel yang merespon request Anda, klik tombol CHAT"
+                            android:id="@+id/informasibiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt1234biaya"
+                            android:layout_marginBottom="4dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Jika Anda ingin membatalkan request, Klik tombol BATAL"
+                            android:id="@+id/informasi2biaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/informasibiaya"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

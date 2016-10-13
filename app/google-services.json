@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "787124412960",
+    "firebase_url": "https://beliautopart-1315.firebaseio.com",
+    "project_id": "beliautopart-1315",
+    "storage_bucket": "beliautopart-1315.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787124412960:android:fdcdf4bb2cac0788",
+        "android_client_info": {
+          "package_name": "com.beliautopart.beliautopart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787124412960-uner9fl2glgiddfaeeq4hcqrosuru6gn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beliautopart.beliautopart",
+            "certificate_hash": "4E22A19B38A6A27B3393B41F031584D57C456E82"
+          }
+        },
+        {
+          "client_id": "787124412960-2gg4i9l6fjv6eghbd0p0g604bqu22ggm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATM_N5Qg5Ms24N4cPpDkRvbBHZ9A85OBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787124412960-2gg4i9l6fjv6eghbd0p0g604bqu22ggm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787124412960:android:e71feb4ba850e60d",
+        "android_client_info": {
+          "package_name": "kurir.beliautopart.com.kurir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787124412960-v150onsmtshnvfk96ps692bjlse1d1gb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kurir.beliautopart.com.kurir",
+            "certificate_hash": "4E22A19B38A6A27B3393B41F031584D57C456E82"
+          }
+        },
+        {
+          "client_id": "787124412960-2gg4i9l6fjv6eghbd0p0g604bqu22ggm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATM_N5Qg5Ms24N4cPpDkRvbBHZ9A85OBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787124412960-2gg4i9l6fjv6eghbd0p0g604bqu22ggm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787124412960:android:44a27d022205b33e",
+        "android_client_info": {
+          "package_name": "com.beliautopart.bengkel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787124412960-mroov3o77d43dfseq2r9kmbtd40stue0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.beliautopart.bengkel",
+            "certificate_hash": "4E22A19B38A6A27B3393B41F031584D57C456E82"
+          }
+        },
+        {
+          "client_id": "787124412960-2gg4i9l6fjv6eghbd0p0g604bqu22ggm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATM_N5Qg5Ms24N4cPpDkRvbBHZ9A85OBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787124412960-2gg4i9l6fjv6eghbd0p0g604bqu22ggm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/loadingLayout"
+        android:visibility="gone">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            app:cpv_animAutostart="false"
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="4dp" />
+
+        <TextView
+            android:id="@+id/progress_view_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_view"
+            android:layout_centerHorizontal="true"
+            android:text="Memproses Data" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/DiatarLayout"
+        android:visibility="gone">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order NO"
+                    android:id="@+id/txtNoOrder"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/textView21"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="PEMBAYARAN SUDAH TERVERIFIKASI. MENUNGGU SERAH TERIMA DENGAN KURIR"
+                            android:id="@+id/textView12"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView21"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Barang Yang Diantarkan:"
+                            android:id="@+id/textView31"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="1. Shock Breaker Depan \n2. Shock Breaker Depan (2)"
+                            android:id="@+id/txtListDiantar"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView31"
+                            android:layout_marginBottom="16dp" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Informasi:"
+                            android:id="@+id/textView41"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Kurir sedang menuju warehouse untuk mengambil pesanan Anda"
+                            android:id="@+id/textView16"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView41"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Setelah proses serah terima barang di warehouse, kurir akan segera menuju lokasi Anda"
+                            android:id="@+id/textView18"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView16"
+                            android:layout_marginBottom="16dp" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/pembayaranLayout"
+        android:visibility="gone">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order NO"
+                    android:id="@+id/txtNoOrder2"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/txt111"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="SPARE PART TELAH DIKIRIM"
+                            android:id="@+id/txt112"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt111"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nama Kurir:"
+                            android:id="@+id/txt113"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Nama Kurir"
+                            android:id="@+id/txtNamaKurir"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt113"
+                            android:layout_marginBottom="16dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="No. HP Kurir:"
+                            android:id="@+id/txt115"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtNamaKurir"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Hp"
+                            android:id="@+id/txtHpKurir"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt115"
+                            android:layout_marginBottom="16dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Foto Kurir:"
+                            android:id="@+id/txt117"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@+id/txtHpKurir"/>
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_below="@+id/txt117"
+                            android:id="@+id/imgKurir" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Barang Yang Diantarkan:"
+                            android:id="@+id/txt118"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="list barang"
+                            android:id="@+id/txtListBarang2"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt118"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Informasi:"
+                            android:id="@+id/txt119"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Spare part sedang diantar oleh kurir ke lokasi Anda"
+                            android:id="@+id/txt1234"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt119"
+                            android:layout_marginBottom="4dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Tunggu sampai spare part sampai, lalu mintalah kode kurir dari kurir yang mengantarkan Spare Part"
+                            android:id="@+id/txt12345"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt1234"
+                            android:layout_marginBottom="4dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Klik tombol BARANG DITERIMA dan masukkan kode kurir untuk mengakhiri order Anda"
+                            android:id="@+id/txt123456"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt12345"
+                            android:layout_marginBottom="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/barangditerimaLayout">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView4" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order NO"
+                    android:id="@+id/txtNoOrder3"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/txt121"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="ORDER TELAH SELESAI, BARANG SUDAH DITERIMA"
+                            android:id="@+id/txt132"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/txt121"
+                            android:layout_marginBottom="16dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView"
+                            android:layout_below="@+id/txt132"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="16dp"
+                            android:src="@drawable/check" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

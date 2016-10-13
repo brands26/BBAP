@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/loadingLayout"
+        android:visibility="gone">
+
+        <com.github.rahatarmanahmed.cpv.CircularProgressView
+            android:id="@+id/progress_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="0dp"
+            app:cpv_animAutostart="false"
+            app:cpv_indeterminate="true"
+            app:cpv_thickness="4dp" />
+
+        <TextView
+            android:id="@+id/progress_view_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/progress_view"
+            android:layout_centerHorizontal="true"
+            android:text="Memproses Data" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/pembayaranLayout"
+        android:visibility="gone">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView2" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order NO"
+                    android:id="@+id/txtNoOrder"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/textView21"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Menunggu Pembayaran Pesanan Anda"
+                            android:id="@+id/textView12"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView21"
+                            android:layout_marginBottom="4dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="00:00"
+                            android:id="@+id/txtTimer"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_below="@+id/textView12"
+                            android:layout_centerHorizontal="true"
+                            android:layout_margin="16dp" />
+
+                        <com.github.rahatarmanahmed.cpv.CircularProgressView
+                            android:id="@+id/progress_view_timer"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="0dp"
+                            app:cpv_animAutostart="false"
+                            app:cpv_indeterminate="true"
+                            android:layout_marginBottom="16dp"
+                            android:layout_below="@+id/txtTimer"
+                            app:cpv_thickness="4dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nominal Pembayaran:"
+                            android:id="@+id/textView31"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp.000000"
+                            android:id="@+id/txtBiaya"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView31" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nomor Rekening Tujuan Transfer:"
+                            android:id="@+id/textView14"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_below="@+id/txtBiaya"
+                            android:layout_marginRight="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/linierLayoutRekening"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView14"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Item yang diorder"
+                            android:id="@+id/textView41"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/linierLayoutItemOrder"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/textView41"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="vertical">
+
+                        </LinearLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/linierLayoutItemOrder">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="TOTAL "
+                                android:id="@+id/textView13"
+                                android:layout_margin="16dp"
+                                android:textColor="#F7441A" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceMedium"
+                                android:text="Medium Text"
+                                android:id="@+id/txtTotalBiaya"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
+                                android:layout_margin="16dp" />
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/verivikasiLayout">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView3" >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Order NO"
+                    android:id="@+id/txtNoOrderVerifikasi"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="16dp" />
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view_status_verifikasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Status Saat ini:"
+                            android:id="@+id/textView212"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="mohon Tunggu Sementara Kami Melakukan Verifikasi Pembayaran Anda"
+                            android:id="@+id/txtNomorOrder"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView212"
+                            android:layout_marginBottom="4dp"
+                            android:textAlignment="center" />
+
+                        <com.github.rahatarmanahmed.cpv.CircularProgressView
+                            android:id="@+id/progress_view_timer_Verifikasi"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:padding="0dp"
+                            app:cpv_animAutostart="false"
+                            app:cpv_indeterminate="true"
+                            app:cpv_thickness="4dp"
+                            android:layout_below="@+id/txtNomorOrder"
+                            android:layout_margin="16dp" />
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/card_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardUseCompatPadding="true"
+                    card_view:cardCornerRadius="4dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#FFFFFFFF">
+
+                    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:orientation="vertical" android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nominal Pembayaran:"
+                            android:id="@+id/textView61"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp.000000"
+                            android:id="@+id/txtNominal"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView61" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Bank Tujuan Transfer:"
+                            android:id="@+id/textView24"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_below="@+id/txtNominal"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp.000000"
+                            android:id="@+id/txtBankTujuan"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView24" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Bank Asal:"
+                            android:id="@+id/textView15"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_below="@+id/txtBankTujuan"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp.000000"
+                            android:id="@+id/txtBankAsal"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView15" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="No Rek Asal:"
+                            android:id="@+id/textView17"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:textColor="#F7441A"
+                            android:layout_below="@+id/txtBankAsal"
+                            android:layout_marginRight="16dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:text="Rp.000000"
+                            android:id="@+id/txtNoRekeningAsal"
+                            android:layout_alignParentBottom="false"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="false"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_below="@+id/textView17"
+                            android:layout_marginBottom="16dp" />
+
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>

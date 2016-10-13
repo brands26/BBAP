@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00FFFFFF"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/imgProduk"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nama Produk"
+        android:id="@+id/txtNamaProduk"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgProduk"
+        android:layout_toEndOf="@+id/imgProduk"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Kode Produk"
+        android:id="@+id/txtKodeProduk"
+        android:layout_below="@+id/txtNamaProduk"
+        android:layout_alignLeft="@+id/txtNamaProduk"
+        android:layout_alignStart="@+id/txtNamaProduk" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Jumlah"
+        android:id="@+id/txtJumlah"
+        android:layout_alignLeft="@+id/txtKodeProduk"
+        android:layout_alignStart="@+id/txtKodeProduk"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/txtKodeProduk"
+        android:layout_alignBottom="@+id/imgProduk"
+        android:gravity="bottom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Harga"
+        android:id="@+id/txtHarga"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@+id/txtJumlah" />
+
+</RelativeLayout>

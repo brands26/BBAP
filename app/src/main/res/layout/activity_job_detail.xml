@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.beliautopart.bengkel.activity.LayoutingActivity"
+    android:background="@drawable/app_background"
+    android:backgroundTintMode="screen">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/linearLayout7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView13"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card_view_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relativeLayout10"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/left_card_red"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardUseCompatPadding="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                <FrameLayout
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/left_card_red" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="jobId"
+                            android:id="@+id/txtJobId"
+                            android:layout_marginBottom="5dp"
+                            android:textSize="26dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimary" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Peta Lokasi Antara Anda dan Customer."
+                            android:id="@+id/textView29"
+                            android:layout_below="@+id/txtJobId"
+                            android:layout_alignLeft="@+id/txtJobId"
+                            android:layout_alignStart="@+id/txtJobId"
+                            android:layout_marginBottom="5dp" />
+
+                        <fragment
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:id="@+id/map"
+                            android:name="com.google.android.gms.maps.SupportMapFragment"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_below="@+id/textView29"
+                            android:layout_marginBottom="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nama"
+                            android:id="@+id/txtNamaCustomer"
+                            android:layout_below="@+id/map"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_alignRight="@+id/txtWaktu"
+                            android:layout_alignEnd="@+id/txtWaktu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="jarak"
+                            android:id="@+id/txtJarak"
+                            android:layout_below="@+id/txtNamaCustomer"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_alignRight="@+id/txtWaktu"
+                            android:layout_alignEnd="@+id/txtWaktu" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Waktu Request"
+                            android:id="@+id/txtWaktu"
+                            android:layout_below="@+id/txtJarak"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="kendaraan"
+                            android:id="@+id/txtKendaraan"
+                            android:layout_below="@+id/txtWaktu"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Nopol"
+                            android:id="@+id/txtNopol"
+                            android:layout_below="@+id/txtKendaraan"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginBottom="5dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Kerusakan"
+                            android:id="@+id/txtKerusakan"
+                            android:layout_below="@+id/txtNopol"
+                            android:layout_alignLeft="@+id/txtNopol"
+                            android:layout_alignStart="@+id/txtNopol"
+                            android:layout_marginBottom="10dp"
+                            android:layout_alignRight="@+id/txtNopol"
+                            android:layout_alignEnd="@+id/txtNopol" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:id="@+id/linearLayout7"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false" >
+
+        <RelativeLayout
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/lbAmbilJob"
+            android:background="@drawable/bottom_button_left_selector" >
+
+            <ImageView
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:id="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:background="#00FFFFFF"
+                android:src="@drawable/checkmark48"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Ambil Job"
+                android:id="@+id/textView55"
+                android:textColor="#FFFFFF"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/_8sdp"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutLoading"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:layout_below="@+id/toolbar">
+        <include
+            layout="@layout/loading_bap_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"></include>
+    </RelativeLayout>
+
+</RelativeLayout>
